@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <style>
+        label{
+            margin: 10px 0;
+            display: block;
+        }
+        label span{
+            display: none;
+        }
+    </style>
+   <!-- <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).next("span").show().fadeOut("slow");
+            });
+        });
+    </script>-->
+
+    <script>
+        $(document).ready(function () {
+            $("input").blur(function () {
+                $(this).next("span").show().fadeOut("slow");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <!--<form>
+        <label>Email: <input type="text"><span>Focus fire</span></label>
+        <label>Password: <input type="password"><span>Focus fire</span></label>
+        <label><input type="submit" value="Sign IN"></label>
+    </form>-->
+
+    <form>
+        <label>Email: <input type="text"><span>Blure fire</span></label>
+        <label>Password: <input type="password"><span>Blure fire</span></label>
+        <label><input type="submit" value="Sign IN"><span>Blure fire</span></label>
+
+    </form>
+
+</body>
+</html>

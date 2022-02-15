@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("select").change(function () {
+                var selectOption = $(this).find(":selected").val();
+                alert("Event Occur: "+selectOption);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <select>
+        <option>India</option>
+        <option>America</option>
+        <option>USA</option>
+    </select>
+</body>
+</html>

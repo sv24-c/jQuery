@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            padding: 10px;
+            background: lightcyan;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+           $(window).resize(function () {
+              $(window).bind("resize", function () {
+                  $("p").text("Window width: "+$(window).width()+", "+"Window height: "+$(window).height);
+              });
+           });
+        });
+    </script>
+</head>
+<body>
+
+    <p>Hello Whatever You are cunstructing the right now is the welknow topic of jQuery.Hello Whatever You are cunstructing the right now is the welknow topic of jQuery
+    Hello Whatever You are cunstructing the right now is the welknow topic of jQuery
+    </p>
+</body>
+</html>

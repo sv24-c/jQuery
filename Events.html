@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            padding: 15px;
+            font: 15px sans-serif;
+            color: crimson;
+            background: lightpink;
+        }
+        p.highlight{
+            background: darkgoldenrod;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+           $("p").click(function () {
+               $(this).slideUp();
+           });
+
+           $("p").click(function () {
+              $(this).slideDown();
+           });
+
+           $("p").dblclick(function () {
+              $(this).slideUp();
+           });
+
+           $("#meta").hover(function () {
+              $(this).addClass("highlight");
+           }, function () {
+               $(this).removeClass("highlight");
+           });
+
+           $("#mark").mouseenter(function () {
+              $(this).addClass("highlight");
+           });
+           $("#mark").mouseleave(function () {
+              $(this).addClass("highlight");
+           });
+        });
+
+    </script>
+</head>
+<body>
+
+    <p>First Event Occur on Server</p>
+    <p id="meta">Second Event Occur on Server</p>
+    <p id="mark">Third Event Occur on Server</p>
+
+</body>
+</html>

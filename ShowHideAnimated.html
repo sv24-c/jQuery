@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="showhide.js"></script>
+    <style>
+        p{
+            background: lightgreen;
+            padding: 25px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            showhide.show();
+        });
+    </script>
+</head>
+<body>
+
+    <button type="button" class="hide-btn">Hide Paragraphs</button>
+    <button type="button" class="show-btn">Show Paragraphs</button>
+
+    <p class="very-fast"> Client One is running in One Server that Connected too.</p>
+    <p class="normal"> Client One is running in One Server that Connected too.</p>
+    <p class="fast"> Client One is running in One Server that Connected too.</p>
+    <p class="slow"> Client One is running in One Server that Connected too.</p>
+    <p class="very-slow"> Client One is running in One Server that Connected too.</p>
+
+</body>
+</html>

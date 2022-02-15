@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+           $("p.mark").css("background", "yellow");
+
+          // $("#mark").css("background", "yellow");
+
+           $("#mark span").css("background", "red");
+
+           $("ul li").css("background", "blue");
+
+           $('a[target="_blank"]').css("background", "yellow");
+        });
+
+    </script>
+</head>
+<body>
+
+    <p class="mark">This is mark class tag of Paragraph</p>
+
+    <ul id="mark">
+        <li>Client one</li>
+        <li>Client <span>two</span>two</li>
+        <li>Client three</li>
+    </ul>
+
+    <p>Go to<a href="../style.css" target="_blank">Home Page</a></p>
+</body>
+</html>

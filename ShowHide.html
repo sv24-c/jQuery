@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <style>
+        p{
+            background: lightgreen;
+            padding:15px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+           $(".hide-btn").click(function () {
+              $("#meta").hide();
+           });
+
+           $(".show-btn").click(function () {
+              $("p").show();
+           });
+        });
+    </script>
+</head>
+<body>
+
+    <button type="button" class="hide-btn">Hide Paragraph</button>
+    <button type="button" class="show-btn">SHow Paragraph</button>
+    <p id="meta">Client one is Up</p>
+    <p>Server is Running</p>
+</body>
+</html>

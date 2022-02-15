@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        *{
+            padding:15px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+
+    <script>
+        $(document).ready(function () {
+           $("tr:odd").css("background", "orange ");
+
+           $("tr:even").css("background", "yellow");
+
+           $("p:first").css("background", "navy");
+
+           $("form :text").css("background", "purple");
+
+           $("form :password").css("background", "black");
+
+          // $("form :submit").css("background", "violet");
+           $("form :submit").css("background", "violet");
+
+
+        });
+    </script>
+</head>
+<body>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>ServerName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Apache</td>
+                <td>apache@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Xampp</td>
+                <td>xampp@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jetty</td>
+                <td>jetty@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>This is Server Table example code of Html</p>
+    <form>
+        <label>Name:<input type="text"></label>
+        <label>Password:<input type="password"></label>
+        <input type="submit" value="Sign In">
+    </form>
+</body>
+</html>
