@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="formfield.js"></script>
+    <script>
+        $(document).ready(function () {
+            Formfield.formfield();
+        });
+
+    </script>
+</head>
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" id="name"></td>
+            </tr>
+
+            <tr>
+                <td>Comment: </td>
+                <td><textarea rows="3" cols="4" id="comment"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>City:</td>
+                <td>
+                    <select id="city">
+                        <option>London</option>
+                        <option>Paris</option>
+                        <option>New York</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+        <button type="button" class="get-name">Get Name</button>
+        <button type="button" class="get-comment">Get Comment</button>
+        <button type="button" class="get-city">Get City</button>
+
+</body>
+</html>
