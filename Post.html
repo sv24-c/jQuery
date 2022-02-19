@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="Post.js"></script>
+    <script>
+        $(document).ready(function () {
+            Post.post();
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <form action="displaycomment.php">
+        <label>Name: <input type="text" name="name"></label>
+        <label>Comment: <textarea cols="50" name="comment"></textarea></label>
+        <input type="submit" value="Send">
+    </form>
+    <div id="result"></div>
+
+</body>
+</html>
