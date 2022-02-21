@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Bound Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="eventbound.js"></script>
+    <script>
+            $(document).ready(function () {
+                eventbound.bound();
+            });
+    </script>
+</head>
+<body>
+    <ul>
+        <li class="parent">CLick to see parent on click event</li>
+
+        <ul>
+            <li class="child">This will not work,,(Child)</li>
+
+            <ul>
+                <li class="grandchild">This will not work,,(Grand Child)</li>
+            </ul>
+        </ul>
+    </ul>
+</body>
+</html>

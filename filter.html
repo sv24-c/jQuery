@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="filter.js"></script>
+    <script>
+        $(document).ready(function () {
+           Filter.filt();
+        });
+    </script>
+</head>
+<body>
+    <input id="myInput" type="text" placeholder="Search">
+    <table>
+        <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="myBody">
+            <tr>
+                <td>Smit</td>
+                <td>Vachhani</td>
+                <td>smit@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Pavan</td>
+                <td>Gabani</td>
+                <td>pavan@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Rahil</td>
+                <td>Karia</td>
+                <td>rahil@gmail.com</td>
+            </tr>
+
+             <tr>
+                <td>Shekhar</td>
+                <td>Arya</td>
+                <td>shekhar@gmail.com</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
