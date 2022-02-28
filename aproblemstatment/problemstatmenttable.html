@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Problem statment given by nilesh sir</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="problemstatmenttable.js"></script>
+    <script>
+        $(document).ready(function () {
+            problemoftable.protable();
+        });
+    </script>
+</head>
+<body>
+
+<div id="maindiv">
+    <label>Name<input type="text" class="name"></label><br><br>
+    <label>Last Name<input type="text" class="lname"></label><br><br>
+    <label>email<input type="text" class="email"></label><br><br>
+    <label>Address<textarea class="address"></textarea></label><br><br>
+    <button type="button" class="addbtn">Add in Table</button>
+
+    <table border="1px solid">
+        <thead>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Address</th>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+  <div id="modalpopup">
+      <div id="closebtn">
+          <span>Close Button</span>
+      </div>
+      <p id="rowid" style="visibility: hidden"></p>
+      <label>Name<input type="text" class="updtname"></label><br><br>
+      <label>Last Name<input type="text" class="updtlname"></label><br><br>
+      <label>email<input type="text" class="updtemail"></label><br><br>
+      <label>Address<textarea class="updtaddress"></textarea></label><br><br>
+      <button type="button" class="updtbtn">Update</button>
+  </div>
+</body>
+</html>
